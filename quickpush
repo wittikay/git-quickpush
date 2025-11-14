@@ -50,20 +50,13 @@ if [ -z "$commit_message" ]; then
     exit 1
 fi
 
-# Confirm before proceeding
+# Show what will be executed
 echo ""
 echo -e "${YELLOW}🔄 About to run:${NC}"
 echo -e "   ${BLUE}git add -A${NC}"
 echo -e "   ${BLUE}git commit -m \"$commit_message\"${NC}"
 echo -e "   ${BLUE}git push${NC}"
 echo ""
-echo -e "${YELLOW}Continue? (y/N):${NC}"
-read -r confirm
-
-if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
-    echo -e "${YELLOW}⏹️  Operation cancelled${NC}"
-    exit 0
-fi
 
 # Execute the git commands
 echo -e "${BLUE}📝 Staging all changes...${NC}"
