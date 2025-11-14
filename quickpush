@@ -17,6 +17,11 @@ YELLOW='\033[1;33m'
 BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
+# Startup branding
+echo -e "${BLUE}🚀 QuickPush v1.0${NC} ${YELLOW}by Wittikay${NC}"
+echo -e "${BLUE}   Streamlined git workflow tool${NC}"
+echo ""
+
 # Check if we're in a git repository
 if ! git rev-parse --git-dir > /dev/null 2>&1; then
     echo -e "${RED}❌ Error: Not a git repository${NC}"
