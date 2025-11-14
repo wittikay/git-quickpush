@@ -27,12 +27,25 @@ Perfect for:
 
 ## 📦 Installation
 
-The tool is installed as a global command at:
-```
-/Users/wittikay/.local/bin/quickpush
+### Quick Install (Recommended)
+```bash
+curl -sSL https://raw.githubusercontent.com/wittikay/git-quickpush/main/install.sh | bash
 ```
 
-Added to your system PATH for universal access.
+### Manual Install
+```bash
+# Clone the repository
+git clone https://github.com/wittikay/git-quickpush.git
+cd git-quickpush
+
+# Run the installation script
+./install.sh
+```
+
+### What Gets Installed
+- Script location: `~/.local/bin/quickpush`
+- Added to your PATH automatically
+- Shell alias `qp` for convenience
 
 ## 💻 Usage
 
@@ -113,7 +126,7 @@ quickpush                    # Does all of the above interactively
 
 ## 🔧 Customization
 
-The script can be easily modified at `/Users/wittikay/.local/bin/quickpush` to:
+The script can be easily customized by editing `~/.local/bin/quickpush` to:
 - Change confirmation prompts
 - Modify color schemes  
 - Add additional git commands
